@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>📚 Student Dashboard</h1>
+    <p class="subtitle">Available books and study resources</p>
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Search by book name or subject..."
+      class="search"
+    />
+
+    <!-- BOOKS -->
+    <h2>Available Books</h2>
+    <div id="bookSection" class="grid"></div>
+
+    <!-- SUBJECTS -->
+    <h2>Subjects & Notes</h2>
+    <div id="subjectSection"></div>
+
+    <button class="logout">Logout</button>
+  </div>
+
+  <script src="student.js"></script>
+</body>
+</html>

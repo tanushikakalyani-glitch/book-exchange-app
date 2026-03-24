@@ -1,0 +1,68 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="impact.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Impact Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="impact-container">
+
+    <h1>🌍 Impact Dashboard</h1>
+    <p class="impact-subtitle">
+      Measuring social, financial & environmental impact
+    </p>
+
+    <!-- Impact Cards -->
+    <div class="impact-grid">
+      <div class="impact-card">
+        <h2 id="booksCount">0</h2>
+        <p>📚 Books Exchanged</p>
+      </div>
+
+      <div class="impact-card">
+        <h2 id="moneySaved">₹0</h2>
+        <p>💰 Money Saved</p>
+      </div>
+
+      <div class="impact-card">
+        <h2 id="booksReused">0</h2>
+        <p>♻️ Books Reused</p>
+      </div>
+
+      <div class="impact-card">
+        <h2 id="paperSaved">0</h2>
+        <p>🌱 Pages Saved</p>
+      </div>
+    </div>
+    <!-- Impact Charts -->
+<div class="chart-section">
+  <h2>📊 Impact Overview</h2>
+
+  <div class="chart-grid">
+    <canvas id="impactBarChart"></canvas>
+    <canvas id="impactPieChart"></canvas>
+  </div>
+</div>
+
+    <!-- NGO Section -->
+    <div class="ngo-section">
+      <h2>❤️ Books Donated for Social Causes</h2>
+      <ul id="donatedBooks"></ul>
+
+      <p class="ngo-note">
+        Partner NGO (Demo): <b>Vidya Foundation</b> – Supporting rural education
+      </p>
+    </div>
+
+    <button class="back-btn" onclick="window.location.href='student.html'">
+      ← Back to Dashboard
+    </button>
+
+  </div>
+
+  <script src="impact.js"></script>
+</body>
+</html>

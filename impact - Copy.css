@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f8f6;
+}
+
+.impact-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+.impact-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Cards */
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.impact-card {
+  background: linear-gradient(135deg, #e8f5e9, #ffffff);
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-4px);
+}
+
+.impact-card h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #1b5e20;
+}
+
+.impact-card p {
+  margin-top: 10px;
+  color: #444;
+  font-weight: 500;
+}
+
+/* NGO */
+.ngo-section {
+  margin-top: 40px;
+}
+
+.ngo-section h2 {
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+.ngo-section ul {
+  padding-left: 20px;
+}
+
+.ngo-section li {
+  margin: 6px 0;
+  color: #333;
+}
+
+.ngo-note {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Button */
+.back-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 14px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #125ea6;
+}
+.chart-section {
+  margin-top: 40px;
+}
+
+.chart-section h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}

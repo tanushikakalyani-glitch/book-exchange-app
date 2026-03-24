@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Exchange - Admin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h2 class="title">📚 Book Exchange</h2>
+  <p class="subtitle">Exchange books within your campus</p>
+
+  <h3>Add a Book</h3>
+  <form autocomplete="off">
+
+  <input type="text" id="name" placeholder="Book Name" autocomplete="off" name="book-name">
+  <input type="text" id="subject" placeholder="Subject" autocomplete="off" name="subject-name"/>
+
+  <select id="condition">
+    <option value="">Select Condition</option>
+    <option value="New">New</option>
+    <option value="Good">Good</option>
+  </select>
+
+  <input type="number" id="price" placeholder="Price (₹)" autocomplete="off" name="price">
+  <input type="url" id="pdf" placeholder="PDF link (optional)" autocomplete="off" name="pdf-link">
+
+  <button type="button" onclick="addBook()">AdddBook</button>
+  </form>
+
+  <hr>
+
+  <div id="bookList"></div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
